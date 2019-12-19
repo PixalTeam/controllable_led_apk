@@ -22,7 +22,7 @@ public class StackMapTableAttr extends MiscAttr {
     public StackMapTableAttr(byte[] data, CodeAttr code) {
         super("StackMapTable", data, 0, data.length);
         addToFrontOf(code);
-        this.numEntries = mo8821u2(0);
+        this.numEntries = mo8820u2(0);
     }
 
     public Method getMethod() {
@@ -220,7 +220,7 @@ public class StackMapTableAttr extends MiscAttr {
     /* access modifiers changed from: 0000 */
     public int extractVerificationType(int startOffset, int tag) {
         if (tag == 7 || tag == 8) {
-            return tag | (mo8821u2(startOffset + 1) << 8);
+            return tag | (mo8820u2(startOffset + 1) << 8);
         }
         return tag;
     }
@@ -301,14 +301,14 @@ public class StackMapTableAttr extends MiscAttr {
         while (i < this.numEntries) {
             if (ipos < this.dataLength) {
                 int ipos2 = ipos + 1;
-                int tag = mo8819u1(ipos);
+                int tag = mo8818u1(ipos);
                 int pc_offset2 = pc_offset + 1;
                 if (tag <= 127) {
                     pc_offset = pc_offset2 + (tag & 63);
                     ipos = ipos2;
                 } else {
                     if (ipos2 + 1 < this.dataLength) {
-                        pc_offset = pc_offset2 + mo8821u2(ipos2);
+                        pc_offset = pc_offset2 + mo8820u2(ipos2);
                         ipos = ipos2 + 2;
                     } else {
                         return;
@@ -346,7 +346,7 @@ public class StackMapTableAttr extends MiscAttr {
                     curLocals += count2;
                 } else {
                     if (ipos + 1 < this.dataLength) {
-                        int num_locals = mo8821u2(ipos);
+                        int num_locals = mo8820u2(ipos);
                         int ipos3 = ipos + 2;
                         dst.print(" - full_frame.  Locals count: ");
                         dst.println(num_locals);
@@ -355,7 +355,7 @@ public class StackMapTableAttr extends MiscAttr {
                         printVerificationTypes(encodedTypes2, 0, num_locals, dst);
                         curLocals = num_locals;
                         if (ipos4 + 1 < this.dataLength) {
-                            int num_stack = mo8821u2(ipos4);
+                            int num_stack = mo8820u2(ipos4);
                             int ipos5 = ipos4 + 2;
                             dst.print("    (end of locals)");
                             int nspaces = Integer.toString(pc_offset).length();

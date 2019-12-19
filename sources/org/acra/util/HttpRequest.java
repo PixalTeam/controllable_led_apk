@@ -50,13 +50,13 @@ public final class HttpRequest {
                     if (this.httpParams != null) {
                         int newSocketTimeOut = HttpConnectionParams.getSoTimeout(this.httpParams) * 2;
                         HttpConnectionParams.setSoTimeout(this.httpParams, newSocketTimeOut);
-                        ACRA.log.mo12236d(ACRA.LOG_TAG, "SocketTimeOut - increasing time out to " + newSocketTimeOut + " millis and trying again");
+                        ACRA.log.mo12235d(ACRA.LOG_TAG, "SocketTimeOut - increasing time out to " + newSocketTimeOut + " millis and trying again");
                     } else {
-                        ACRA.log.mo12236d(ACRA.LOG_TAG, "SocketTimeOut - no HttpParams, cannot increase time out. Trying again with current settings");
+                        ACRA.log.mo12235d(ACRA.LOG_TAG, "SocketTimeOut - no HttpParams, cannot increase time out. Trying again with current settings");
                     }
                     return true;
                 }
-                ACRA.log.mo12236d(ACRA.LOG_TAG, "SocketTimeOut but exceeded max number of retries : " + this.maxNrRetries);
+                ACRA.log.mo12235d(ACRA.LOG_TAG, "SocketTimeOut but exceeded max number of retries : " + this.maxNrRetries);
             }
             return false;
         }
@@ -85,7 +85,7 @@ public final class HttpRequest {
     public void sendPost(URL url, Map<?, ?> parameters) throws IOException {
         HttpClient httpClient = getHttpClient();
         HttpPost httpPost = getHttpPost(url, parameters);
-        ACRA.log.mo12236d(ACRA.LOG_TAG, "Sending request to " + url);
+        ACRA.log.mo12235d(ACRA.LOG_TAG, "Sending request to " + url);
         Iterator i$ = parameters.keySet().iterator();
         while (i$.hasNext()) {
             i$.next();

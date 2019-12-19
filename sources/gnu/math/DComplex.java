@@ -18,7 +18,7 @@ public class DComplex extends Complex implements Externalizable {
     }
 
     /* renamed from: re */
-    public RealNum mo11277re() {
+    public RealNum mo11276re() {
         return new DFloNum(this.real);
     }
 
@@ -27,7 +27,7 @@ public class DComplex extends Complex implements Externalizable {
     }
 
     /* renamed from: im */
-    public RealNum mo11276im() {
+    public RealNum mo11275im() {
         return new DFloNum(this.imag);
     }
 

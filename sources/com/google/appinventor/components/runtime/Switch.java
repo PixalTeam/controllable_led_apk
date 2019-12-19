@@ -34,7 +34,7 @@ public final class Switch extends ToggleBase<CompoundButton> {
             this.switchView = new SwitchCompat(this.activity);
             this.view = this.switchView;
         }
-        mo7727On(false);
+        mo7726On(false);
         ThumbColorActive(-1);
         ThumbColorInactive(Component.COLOR_LTGRAY);
         TrackColorActive(Component.COLOR_GREEN);
@@ -108,14 +108,14 @@ public final class Switch extends ToggleBase<CompoundButton> {
 
     @SimpleProperty(category = PropertyCategory.BEHAVIOR)
     /* renamed from: On */
-    public boolean mo7728On() {
+    public boolean mo7727On() {
         return this.view.isChecked();
     }
 
     @DesignerProperty(defaultValue = "False", editorType = "boolean")
     @SimpleProperty
     /* renamed from: On */
-    public void mo7727On(boolean value) {
+    public void mo7726On(boolean value) {
         this.view.setChecked(value);
         this.view.invalidate();
     }

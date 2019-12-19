@@ -63,7 +63,7 @@ public abstract class Sprite extends VisibleComponent implements AlarmHandler, O
         Interval(100);
         Speed(0.0f);
         Visible(true);
-        mo7717Z(DEFAULT_Z);
+        mo7716Z(DEFAULT_Z);
         container.$form().registerForOnDestroy(this);
     }
 
@@ -139,14 +139,14 @@ public abstract class Sprite extends VisibleComponent implements AlarmHandler, O
 
     @SimpleProperty(description = "The horizontal coordinate of the left edge of the sprite, increasing as the sprite moves to the right.")
     /* renamed from: X */
-    public double mo7712X() {
+    public double mo7711X() {
         return this.xLeft;
     }
 
     @DesignerProperty(defaultValue = "0.0", editorType = "float")
     @SimpleProperty(category = PropertyCategory.APPEARANCE)
     /* renamed from: X */
-    public void mo7713X(double x) {
+    public void mo7712X(double x) {
         this.xLeft = x;
         registerChange();
     }
@@ -154,28 +154,28 @@ public abstract class Sprite extends VisibleComponent implements AlarmHandler, O
     @DesignerProperty(defaultValue = "0.0", editorType = "float")
     @SimpleProperty(category = PropertyCategory.APPEARANCE)
     /* renamed from: Y */
-    public void mo7715Y(double y) {
+    public void mo7714Y(double y) {
         this.yTop = y;
         registerChange();
     }
 
     @SimpleProperty(description = "The vertical coordinate of the top of the sprite, increasing as the sprite moves down.")
     /* renamed from: Y */
-    public double mo7714Y() {
+    public double mo7713Y() {
         return this.yTop;
     }
 
     @DesignerProperty(defaultValue = "1.0", editorType = "float")
     @SimpleProperty(category = PropertyCategory.APPEARANCE)
     /* renamed from: Z */
-    public void mo7717Z(double layer) {
+    public void mo7716Z(double layer) {
         this.zLayer = layer;
         this.canvas.changeSpriteLayer(this);
     }
 
     @SimpleProperty(description = "How the sprite should be layered relative to other sprits, with higher-numbered layers in front of lower-numbered layers.")
     /* renamed from: Z */
-    public double mo7716Z() {
+    public double mo7715Z() {
         return this.zLayer;
     }
 
@@ -275,12 +275,12 @@ public abstract class Sprite extends VisibleComponent implements AlarmHandler, O
 
     @SimpleFunction(description = "Turns the sprite to point towards a designated target sprite. The new heading will be parallel to the line joining the centerpoints of the two sprites.")
     public void PointTowards(Sprite target) {
-        Heading(-Math.toDegrees(Math.atan2((target.mo7714Y() - mo7714Y()) + ((double) ((target.Height() - Height()) / 2)), (target.mo7712X() - mo7712X()) + ((double) ((target.Width() - Width()) / 2)))));
+        Heading(-Math.toDegrees(Math.atan2((target.mo7713Y() - mo7713Y()) + ((double) ((target.Height() - Height()) / 2)), (target.mo7711X() - mo7711X()) + ((double) ((target.Width() - Width()) / 2)))));
     }
 
     @SimpleFunction(description = "Turns the sprite to point towards the point with coordinates as (x, y).")
     public void PointInDirection(double x, double y) {
-        Heading(-Math.toDegrees(Math.atan2((y - mo7714Y()) - ((double) (Height() / 2)), (x - mo7712X()) - ((double) (Width() / 2)))));
+        Heading(-Math.toDegrees(Math.atan2((y - mo7713Y()) - ((double) (Height() / 2)), (x - mo7711X()) - ((double) (Width() / 2)))));
     }
 
     /* access modifiers changed from: protected */
@@ -396,7 +396,7 @@ public abstract class Sprite extends VisibleComponent implements AlarmHandler, O
     }
 
     public BoundingBox getBoundingBox(int border) {
-        return new BoundingBox(mo7712X() - ((double) border), mo7714Y() - ((double) border), ((mo7712X() + ((double) Width())) - DEFAULT_Z) + ((double) border), ((mo7714Y() + ((double) Height())) - DEFAULT_Z) + ((double) border));
+        return new BoundingBox(mo7711X() - ((double) border), mo7713Y() - ((double) border), ((mo7711X() + ((double) Width())) - DEFAULT_Z) + ((double) border), ((mo7713Y() + ((double) Height())) - DEFAULT_Z) + ((double) border));
     }
 
     public static boolean colliding(Sprite sprite1, Sprite sprite2) {

@@ -1,6 +1,6 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: ogQuE0YPiNBYoTzPvfTsTpmjpig=
+SHA1-Digest-Manifest: ob00bSW/T3nrxr23mnE34T1tBHk=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
@@ -9,14 +9,8 @@ SHA1-Digest: 64Cbn9vxV43a8Rlw3ih8mLZ15hI=
 Name: assets/56673328.png
 SHA1-Digest: 1f6l+LMSsQrqvoYpCteXQ27LdMc=
 
-Name: assets/dolorean.jpg
-SHA1-Digest: FKxFJkJjwtcBnxdc3mbkuFNeUUo=
-
-Name: assets/doloreanoff.jpg
-SHA1-Digest: 4IKEOZCIrVu2nPzfzzkc9tyOvT8=
-
 Name: classes.dex
-SHA1-Digest: cqEAzNdjSgbTCFxV1XMjK7mTjWE=
+SHA1-Digest: i+ft4dkPYFqsYBuR/bykxKQPHkY=
 
 Name: res/anim/abc_fade_in.xml
 SHA1-Digest: xuSWnlSNBpBW5KZZ6AqoycVG4bY=

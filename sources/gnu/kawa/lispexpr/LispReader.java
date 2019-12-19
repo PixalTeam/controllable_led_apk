@@ -714,7 +714,7 @@ public class LispReader extends Lexer {
         r19 = (gnu.math.Complex) r32;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:287:0x0481, code lost:
-        if (r19.mo11277re().isZero() != false) goto L_0x0487;
+        if (r19.mo11276re().isZero() != false) goto L_0x0487;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:290:0x0493, code lost:
         r36 = 0;
@@ -821,7 +821,7 @@ public class LispReader extends Lexer {
         return "invalid numeric constant";
      */
     /* JADX WARNING: Code restructure failed: missing block: B:389:?, code lost:
-        return gnu.math.Complex.make((gnu.math.RealNum) r38, r19.mo11276im());
+        return gnu.math.Complex.make((gnu.math.RealNum) r38, r19.mo11275im());
      */
     /* JADX WARNING: Code restructure failed: missing block: B:390:?, code lost:
         return "junk after imaginary suffix 'i'";
@@ -1540,13 +1540,13 @@ public class LispReader extends Lexer {
         L_0x0475:
             r19 = r32
             gnu.math.Complex r19 = (gnu.math.Complex) r19
-            gnu.math.RealNum r47 = r19.mo11277re()
+            gnu.math.RealNum r47 = r19.mo11276re()
             boolean r5 = r47.isZero()
             if (r5 != 0) goto L_0x0487
             java.lang.String r4 = "invalid numeric constant"
             goto L_0x000a
         L_0x0487:
-            gnu.math.RealNum r5 = r19.mo11276im()
+            gnu.math.RealNum r5 = r19.mo11275im()
             r0 = r38
             gnu.math.Complex r4 = gnu.math.Complex.make(r0, r5)
             goto L_0x000a

@@ -75,7 +75,7 @@ public class NamedUnit extends Unit implements Externalizable {
         } else if (value.imValue() != 0.0d) {
             throw new ArithmeticException("defining " + name2 + " using complex value");
         } else {
-            scale2 = value.mo11277re().doubleValue();
+            scale2 = value.mo11276re().doubleValue();
         }
         Unit base2 = value.unit();
         NamedUnit old = lookup(name2, scale2, base2);

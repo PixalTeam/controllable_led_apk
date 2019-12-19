@@ -6,14 +6,8 @@ SHA1-Digest: tEhqZocQlzeVBZtNOoTDfCAPWBE=
 Name: assets/56673328.png
 SHA1-Digest: tFQWFUt8BIpKqzlv/kyfx6qRLoU=
 
-Name: assets/dolorean.jpg
-SHA1-Digest: tgp+ZaC+ZOfLoAe9FmGSL6Vmo5A=
-
-Name: assets/doloreanoff.jpg
-SHA1-Digest: 6xNkqgafkq4Km5/y/Q18B6NFBzY=
-
 Name: classes.dex
-SHA1-Digest: msNrdihEBAIUO65/bWWOHkSh7Rg=
+SHA1-Digest: 1mQEJPbEBHKgbW3ZQFgUfpL4kv0=
 
 Name: res/anim/abc_fade_in.xml
 SHA1-Digest: AcuBNEx7Jg8K6XCieCSQfQAJk5Q=

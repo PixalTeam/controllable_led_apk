@@ -468,7 +468,7 @@ public final class Canvas extends AndroidViewComponent implements ComponentConta
     /* access modifiers changed from: 0000 */
     public void addSprite(Sprite sprite) {
         for (int i = 0; i < this.sprites.size(); i++) {
-            if (((Sprite) this.sprites.get(i)).mo7716Z() > sprite.mo7716Z()) {
+            if (((Sprite) this.sprites.get(i)).mo7715Z() > sprite.mo7715Z()) {
                 this.sprites.add(i, sprite);
                 return;
             }
