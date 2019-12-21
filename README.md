@@ -15,6 +15,7 @@ This Java Android App works with the C++ Arduino Software available here <a href
 3. Open the app and make your phone connected to the Arduino and enjoy
     
     <img src="http://www.mediafire.com/convkey/a772/naij7v4qzxxxo58zg.jpg" width="300px">
+    <img src="http://www.mediafire.com/convkey/af6d/upwn98sugzzs6a6zg.jpg" width="300px">
 
 ## Donate
 
